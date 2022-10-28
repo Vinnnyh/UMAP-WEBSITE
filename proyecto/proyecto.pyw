@@ -68,16 +68,16 @@ def erase():
     view = 0
 
 lblpiso = Label(ventana,text="",background="#4952b9")
-lblpiso.config(font=("Verdana",24))
+lblpiso.config(font=("Verdana",24),fg='#fff')
 lblpiso.grid(row=4,column=0)
 lblnum = Label(ventana,text="",background="#4952b9")
-lblnum.config(font=("Verdana",24))
+lblnum.config(font=("Verdana",24),fg='#fff')
 lblnum.grid(row=5,column=0)
 lblubic = Label(ventana,text="Ubicación",bg="#4952b9",fg="white").grid(row=0,column=0)
 ubic= ttk.Combobox(
     values=location
 )
-ubic.set('Buscar')
+ubic.set('')
 ubic.bind('<KeyRelease>',buscar1)
 ubic.grid(row=1,column=0)
 lbldest = Label(ventana,text="Destino",bg="#4952b9",fg="white").grid(row=2,column=0)
@@ -85,13 +85,13 @@ dest= ttk.Combobox(
     values=location
 )
 dest.grid(row=3,column=0)
-dest.set('Buscar')
+dest.set('')
 dest.bind('<KeyRelease>',buscar2)
 
 
 
-btn = Button(ventana,text="Buscar",width=19,command=lines, state="normal").grid(row=6,column=0)
-btn2 = Button(ventana,text="Borrar",width=19,command=erase, state="normal").grid(row=7,column=0)
+btn = Button(ventana,text="Buscar",width=19,command=lines).grid(row=6,column=0)
+btn2 = Button(ventana,text="Borrar",width=19,command=erase).grid(row=7,column=0)
 
 
 ventana.mainloop()
