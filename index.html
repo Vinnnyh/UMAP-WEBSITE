@@ -49,24 +49,6 @@
     </div>
     <script src="index.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        const form=document.querySelector(".contact_form");
-        function enviar(e){
-            e.preventDefault();
-            const nombre=document.querySelector(".nombre"),
-                correo=document.querySelector(".correo");
-            Email.send({
-                SecureToken : "30f7b662-f2a0-4eef-bb89-bfe531d0b27a",
-                To : correo.value,
-                From : "umapbot@gmail.com",
-                Subject : "Subscripción",
-                Body : "Gracias por suscribirte a UMAP :D"+ nombre.value
-            }).then(
-                    message => alert(message)
-                );
-        }
-        form.addEventListener("submit", enviar)
-    </script>
     <section class="content about">
         <img src="img/interrogante.png" height="310px" alt="logo">
         <section>
