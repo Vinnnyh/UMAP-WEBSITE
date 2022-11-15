@@ -1,3 +1,18 @@
+.contenedor{
+    width:100%;
+    margin:0% auto;
+    overflow: hidden;
+}
+
+.content {
+    height: 20%;
+    padding: 3%;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 *{
     margin: 0;
     padding: 0;
@@ -32,7 +47,10 @@ p {
     height: auto;
     background: #171717;
     width: 100%;
-    z-index: 100;
+    z-index: 100%;
+}
+.head2 {
+    display: none;
 }
 
 
@@ -40,10 +58,58 @@ p {
     display: flex;
 }
 
+.navbar li {
+    float: left;
+}
+
+.navbar li a{
+    background-size: 1px;
+    background-color: #171717;
+    padding: auto;
+    display: block;
+}
+
+.navbar li a:hover{
+    transition: all 0.6s ease;
+    filter: brightness(123%);
+}
+
+.navbar li ul{
+    width: auto;
+    display: none;
+    position: absolute;
+    padding: 0%;
+    max-width: fit-content;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+.navbar > li {
+    float: left;
+}
+
+.navbar li:hover > ul{
+    display: block;
+}
+
+.menu {
+    transition: all 0.8s ease;
+    max-width:100%;height:auto;
+}
+
+.menu:hover{
+    transition: all 0.6s ease;
+    filter: brightness(123%);  
+}
+
 .logo {
     transition: all 0.8s ease;
     margin-left: 20px;
+    margin-right: 20px;
     margin-top: 3px;
+    max-width:100%;height:auto;
 }
 
 .logo:hover{
@@ -55,7 +121,25 @@ p {
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 2%;
+}
+.menuimg {
+    transition: all 0.8s ease;
+    margin-left: 20px;
+    margin-top: 0px;
+    max-width:100%;height:auto;
+}
+
+.menuimg:hover{
+    transition: all 0.6s ease;
+    filter: brightness(123%);
+}
+
+.menuimg a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2%;
 }
 
 .navbar a {
@@ -64,7 +148,7 @@ p {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 120%;
 }
 
 .navbar button {
@@ -86,8 +170,6 @@ p {
     margin: auto;
 }
 
-
-
 .header {
     display: flex;
     justify-content: center;
@@ -102,9 +184,9 @@ p {
 }
 
 .title {
-    margin-bottom: 40px;
-    font-size: 60px;
-    font-weight: 600;
+    margin-bottom: 4%;
+    font-size: 310%;
+    font-weight: 60%;
     text-transform: uppercase;
     color: #fff;
 }
@@ -133,13 +215,7 @@ p {
 }
 
 
-.content {
-    height: auto;
-    display: flex;
-    flex-direction: center;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .sau {
     padding: 0px;
@@ -230,7 +306,9 @@ p {
 
 .about {
     background: #171717;
-    height: 50vh;
+    height: 100%;
+    max-width:100%;
+    align-items: center;
 }
 
 .price {
@@ -242,11 +320,9 @@ p {
 }
 
 .contact {
-    margin-right: auto;
+    width: 100%;
     background: #171717;
-    display: flex;
-    margin-top: auto;
-    height: auto;
+    height:auto;
 }
 
 .contact-tittle {
@@ -356,12 +432,12 @@ p {
 .popup {
     background: #171717;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
-    border-radius: 10px;
+    border-radius: 1%;
     color: #F8F8F8;
     font-family: 'Montserrat', sans-serif;
-    padding: 20px;
+    padding: 2%;
     text-align: center;
-    width: 600px;
+    width: 60%;
     transition: .3s ease all;
     transform: scale(0.7);
     opacity: 0;
@@ -470,28 +546,82 @@ p {
     to { opacity: 1; }
 }
 
-
-
-
-@media (max-width: 768px) {
-
-    .title {
-        align-items: center;
-        margin-bottom: 0;
-        font-size: 40px;
-        background-color: #171717;
-    }
-
-    .sau {
-        height: 100vh;
-    }
-
-    .navbar {
+@media (max-width:480px){
+    .head {
         display: none;
     }
-
-    .contact-title {
+    .head2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: auto;
+        background: #171717;
+        width: 100%;
+        z-index: 100%;
+    }
+    .navbar a {
+        display: block ;
+        padding: auto;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 120%;
+    }
+    .about {
+        background: #171717;
+        height: 25%;
+        align-items: center;
+        flex-direction: column;
+    }
+    .title {
+        margin-bottom: 4%;
+        font-size: 250%;
+        font-weight: 60%;
+        text-transform: uppercase;
+        color: #fff;
+        margin-right: 20px;
+    }
+    .inte{
+        margin-top: 5%;
+        height: 150px;
+    }
+    .text {
+        justify-content: center;
+        margin-right: 100px;
+        width:50%;
+        font-size:medium
+    }
+    .content {
+        height: 100%;
+        padding: 0%;
         display: flex;
         justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .contact {
+        width: 100%;
+        background: #171717;
+        height:auto;
+        flex-direction: column;
+        max-width:100%;
+        height:auto;
+    }
+    
+    .contact-tittle {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        max-width:100%;
+        height:auto;
+
+    }
+    .contact-tittle p{
+        margin-top: 30px;
+        margin-bottom: none;
+        flex-direction: column;
+        max-width:100%;
+        height:auto;
     }
 }

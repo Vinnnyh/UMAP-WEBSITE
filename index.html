@@ -3,109 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="index.css">
     <title>UMAP</title>
     <link rel="shortcut icon" href="img/logo.png">
-        
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
 </head>
 <body>
-    
-    <div class="head">
+    <div class="contenedor">
+        <div class="head">
 
-        <div class="logo">
-            
-            <a href="index.html">
-                <img src="img/logo.png" height="50px" alt="logo">
-            </a>
-        </div>
-
-        <nav class="navbar">
-            <button id="btn-abrir-popup" class="btn-abrir-popup">SUSCRIBIRSE</button>
-            <a href="html/sabermas.html">Saber mas</a>
-            <a href="html/contacto.html">Contacto</a>
-            <a href="html/descarga.html">Instalar</a>
-        </nav>
-
-    </div>
-
-    <header class="content header">
-        
-    </header>
-    <div class="overlay" id="overlay">
-        <div class="popup" id="popup">
-            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
-            <h3>SUSCRIBETE</h3>
-            <h4>Para estar informado de nuevas actualizaciones.</h4>
-            <form action="" class="contact_form">
-                <div class="contenedor22-inputs">
-                    <input class="nombre" type="text" placeholder="Nombre">
-                    <input class="correo" type="email" placeholder="Correo">
-                </div>
-                <input type="submit" class="btn-submit" value="Suscribirse">
-            </form>
-        </div>
-    </div>
-    <script src="index.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <section class="content about">
-        <img src="img/interrogante.png" height="310px" alt="logo">
-        <section>
-            <h2 class="title">¿Para qué?</h2>
-            <p>¿A quién no le sucedió? qué al llegar el primer día no logró ubicarse en la universidad y no pudo llegar a su destino a tiempo, UMAP busca solucionar esta problemática.
-                por medio de una app tipo mapa que le indica al usuario la mejor ruta que hay para que llegue a la ubicación que haya seleccionado.
-            </p>
-        </section>
-    </section>
-
-    <section class="content price">
-        <article class="contain">
-            <div class="box-container">
-                <div class="box">
-                    <i class="fab fa-windows"></i>
-                    <h3>UMAP</h3>
-                    <a href="html/descarga.html" class="btn">INSTALAR</a>
-                </div>
-            </div>
-        </article>
-    </section>
-
-    <section class="content contact">
-            <div class="contact-tittle info">
-            
-                <div>
-                    <figure class="map">
-                        <img src="img/usuario.png" height="100%" width="100%" alt="mapa">
-                    </figure>
-                    <p>
-                        David Steven Delgado Quiroga <br>
-                        <a href="mailto: ddelgado802@unab.edu.co" class="correo">ddelgado802@unab.edu.co</a>
-                    </p>
-                </div>  
-                <div> 
-                    <figure class="map">
-                        <img src="img/usuario.png" height="100%" width="100%" alt="mapa">
-                    </figure>
-                    <p>
-                        Maicol Steven Florez Rojas <br>
-                        <a href="mailto: mflorez188@unab.edu.co" class="correo">mflorez188@unab.edu.co</a>
-                    </p>
-                </div>
-                <div> 
-                    <figure class="map">
-                        <img src="img/usuario.png" height="100%" width="100%" alt="mapa">
-                    </figure>
-                    <p>
-                        Luis Eduardo Jaimes Hernández <br>
-                        <a href="mailto: ljaimes411@unab.edu.co" class="correo">ljaimes411@unab.edu.co</a>
-                    </p>
-                </div>
-            </div>
-    </section>
-    <footer>
-        © 2022 Todos los derechos reservados.
-    </footer>
+            <div class="logo">
                 
+                <a href="index.html">
+                    <img src="img/logo.png" height="50px" alt="logo">
+                </a>
+            </div>
+
+            <nav class="navbar">
+                <button id="btn-abrir-popup" class="btn-abrir-popup">SUSCRIBIRSE</button>
+                <a href="html/sabermas.html">Saber mas</a>
+                <a href="html/contacto.html">Contacto</a>
+                <a href="html/descarga.html">Instalar</a>
+            </nav>
+        </div>
+
+        <div class="head2">
+            <ul class="navbar">
+                <div class="menu">
+                    <li><a><img src="img/menu2.png"></a>
+                        <ul>
+                            <div class="content about">
+                            <li><a href="html/sabermas.html">Saber mas</a></li>
+                            <li><a href="html/contacto.html">Contacto</a></li>
+                            <li><a href="html/descarga.html">Instalar</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                </div>
+
+                
+            </ul>
+
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.png" height="50px" alt="logo">
+                </a>
+            </div>
+
+            
+        </div>
+
+
+        <header class="content header">
+        
+        </header>
+            <div class="overlay" id="overlay">
+                <div class="popup" id="popup">
+                    <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                    <h3>SUSCRIBETE</h3>
+                    <h4>Para estar informado de nuevas actualizaciones.</h4>
+                    <form action="" class="contact_form">
+                        <div class="contenedor22-inputs">
+                            <input class="nombre" type="text" placeholder="Nombre">
+                            <input class="correo" type="email" placeholder="Correo">
+                        </div>
+                        <input type="submit" class="btn-submit" value="Suscribirse">
+                    </form>
+                </div>
+            </div>
+        
+        <script src="index.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        
+        <section class="content about">
+            <img class="inte" src="img/interrogante.png" alt="logo">
+            <section>
+                <h2 class="title">¿Para qué?</h2>
+                <p class="text">¿A quién no le sucedió? qué al llegar el primer día no logró ubicarse en la universidad y no pudo llegar a su destino a tiempo, UMAP busca solucionar esta problemática.
+                    por medio de una app tipo mapa que le indica al usuario la mejor ruta que hay para que llegue a la ubicación que haya seleccionado.
+                </p>
+            </section>
+        </section>
+
+        <section class="content price">
+            <article class="contain">
+                <div class="box-container">
+                    <div class="box">
+                        <i class="fab fa-windows"></i>
+                        <h3>UMAP</h3>
+                        <a href="html/descarga.html" class="btn">INSTALAR</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="content contact">
+                <div class="contact-tittle info">
+                
+                    <div>
+                        <figure class="map">
+                            <img src="img/usuario.png" height="100%" width="100%" alt="mapa">
+                        </figure>
+                        <p>
+                            David Steven Delgado Quiroga <br>
+                            <a href="mailto: ddelgado802@unab.edu.co" class="correo">ddelgado802@unab.edu.co</a>
+                        </p>
+                    </div>  
+                    <div> 
+                        <figure class="map">
+                            <img src="img/usuario.png" height="100%" width="100%" alt="mapa">
+                        </figure>
+                        <p>
+                            Maicol Steven Florez Rojas <br>
+                            <a href="mailto: mflorez188@unab.edu.co" class="correo">mflorez188@unab.edu.co</a>
+                        </p>
+                    </div>
+                    <div> 
+                        <figure class="map">
+                            <img src="img/usuario.png" height="100%" width="100%" alt="mapa">
+                        </figure>
+                        <p>
+                            Luis Eduardo Jaimes Hernández <br>
+                            <a href="mailto: ljaimes411@unab.edu.co" class="correo">ljaimes411@unab.edu.co</a>
+                        </p>
+                    </div>
+                </div>
+        </section>
+        <footer>
+            © 2022 Todos los derechos reservados.
+        </footer>
+    </div>            
 </body>
 </html>
