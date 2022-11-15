@@ -24,7 +24,7 @@ const form=document.querySelector(".contact_form");
                 To : correo.value,
                 From : "umapbot@gmail.com",
                 Subject : "Subscripción",
-                Body : "Gracias por suscribirte a UMAP , " + nombre.value + "."
+                Body : "Gracias por suscribirte a UMAP , " + nombre.value + "!"
             }).then(
                     alert('¡Gracias por suscribirte!')
                 );
