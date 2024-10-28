@@ -1,3 +1,2 @@
-#*UMAP - WEBSITE*
-Pagina web para proomocionar aplicacion Umap que incluye servicio de suscripcion por correo, 
-cuenta con UI/UX & Responsive design.
+# UMAP - WEBSITE
+Pagina web para promocionar aplicacion Umap con funcionalidad de suscripción por correo y descarga de la aplicación, cuenta con UI/UX & Responsive design.
